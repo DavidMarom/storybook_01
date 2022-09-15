@@ -14,7 +14,6 @@ function Button({ label, backgroundColor = "red", size = "md", onClick }) {
         <button onClick={onClick} style={style}>
             <Container a1={500}>
                 {label}
-                {scale}
             </Container>
         </button>
     )
