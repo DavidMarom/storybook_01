@@ -7,8 +7,13 @@ export default {
 
 const Template = args => <Toggle {...args} />
 
-export const Red = Template.bind({})
+export const Regular = Template.bind({})
+export const Green = Template.bind({})
 
-Red.args = {
-    
+Regular.args = {
+    color: "#0077ff",
+}
+
+Green.args = {
+    color: "#00ff00",
 }
