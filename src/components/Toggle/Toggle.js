@@ -3,11 +3,7 @@ import PropTypes from "prop-types"
 import { Container, Knoba, Knobb } from "./Toggle.style"
 
 function Toggle({ color }) {
-
     const [toggle, setToggle] = useState(true)
-
-
-
     return (
         <Container onClick={() => setToggle(!toggle)}>
             {toggle ? <Knoba color={color} /> : <Knobb />}
