@@ -10,4 +10,5 @@ export const Button2 = styled.button`
   align-items: center;
   color: white;
   border: none;
+  cursor: pointer;
 `;
