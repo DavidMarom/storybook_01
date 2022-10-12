@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 50px;
+  height: 20px;
+  width: 70px;
   border-radius: 50px;
-  width: 100px;
-  background-color: #777777;
-  padding: 2px;
+  background-color: #000000;
+  padding: 5px;
+  cursor: pointer;
 `;
 
 export const Knoba = styled.div`
-  width: 50px;
-  height: 50px;
+  z-index:2;
+
+  width: 20px;
+  height: 20px;
   background-color: ${({ color }) => color};
   margin-left: 50px;
 
@@ -21,15 +24,17 @@ export const Knoba = styled.div`
   border-radius: 50px;
 
   @keyframes ani2 {
-  0% {margin-left: 0px; background-color: #aaaaaa;width: 50px}
-  50% {margin-left: 25px; background-color: ${({ color }) => color};width: 75px}
-  100% {margin-left: 50px; background-color: ${({ color }) => color};width: 50px}
+  0% {margin-left: 0px; background-color: #aaaaaa;width: 20px}
+  50% {margin-left: 25px; background-color: ${({ color }) => color}; width: 50px}
+  100% {margin-left: 50px; background-color: ${({ color }) => color}; width: 20px}
 }
 `;
 
 export const Knobb = styled.div`
-  width: 50px;
-  height: 50px;
+  z-index:2;
+
+  width: 20px;
+  height: 20px;
   background-color: #aaaaaa;
   margin-left: 0px;
 
@@ -41,8 +46,16 @@ export const Knobb = styled.div`
 
   @keyframes ani {
 
-  0% {margin-left: 50px; background-color: ${({ color }) => color};width: 50px}
-  50% {margin-left: 25px; background-color: ${({ color }) => color};width: 75px}
-  100% {margin-left: 0px; background-color: #aaaaaa;width: 50px}
+  0% {margin-left: 50px; background-color: ${({ color }) => color}; width: 20px}
+  50% {margin-left: 10px; background-color: ${({ color }) => color}; width: 50px}
+  100% {margin-left: 0px; background-color: #aaaaaa; width: 20px}
 }
 `;
+
+export const Symb = styled.div`
+  z-index:1;
+  position: absolute;
+  display: flex;
+  padding-left:27px;
+  color: #ffffff;
+`
