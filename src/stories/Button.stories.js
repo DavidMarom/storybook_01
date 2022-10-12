@@ -7,10 +7,13 @@ export default {
 
 const Template = args => <Button {...args} />
 
-export const Red = Template.bind({})
+export const Regular = Template.bind({})
 
-Red.args = {
-    backgroundColor: "red",
+Regular.args = {
+    onclick: () => console.log("Button Pressed"),
+    backgroundColor: "#3576cc",
+    width: 400,
     label: "Press Me",
-    size: "md",
+    size: "small",
+    rounded: true
 }

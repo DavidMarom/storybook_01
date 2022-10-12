@@ -1,25 +1,35 @@
 import PropTypes from "prop-types"
-import { Container } from "./Button.style"
+import { Button2 } from "./Button.style"
 
-function Button({ label, backgroundColor = "red", onClick }) {
-    
-    const style = {
-        backgroundColor,
-        border: "none"
-    }
+function Button({
+    label,
+    backgroundColor = "#3576cc",
+    onClick,
+    width = 700,
+    size = "medium",
+    rounded = false,
+}) {
+
     return (
-        <button onClick={onClick} style={style}>
-            <Container a1={500}>
-                {label}
-            </Container>
-        </button>
+        <Button2
+            onClick={onClick}
+            backgroundColor={backgroundColor}
+            width={width}
+            size={size}
+            rounded={rounded}
+        >
+            {label}
+        </Button2>
     )
 }
 
 Button.propTypes = {
+    onclick: PropTypes.func,
     label: PropTypes.string,
     backgroundColor: PropTypes.string,
-    onclick: PropTypes.func,
+    width: PropTypes.number,
+    size: PropTypes.oneOf(["small", "medium", "large"]),
+    rounded: PropTypes.bool
 }
 
 export default Button

@@ -21,7 +21,7 @@ export const Knoba = styled.div`
   border-radius: 50px;
 
   @keyframes ani2 {
-  0% {margin-left: 0px; background-color: #aaaaaa;width: 50px}
+  0% {margin-left: 0px; background-color: #aaaaaa; width: 50px}
   50% {margin-left: 25px; background-color: ${({ color }) => color};width: 75px}
   100% {margin-left: 50px; background-color: ${({ color }) => color};width: 50px}
 }

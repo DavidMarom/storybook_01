@@ -12,7 +12,6 @@ function ToggleBig({ color }) {
 }
 
 ToggleBig.propTypes = {
-    size: PropTypes.oneOf(["sm", "md", "lg"]),
     color: PropTypes.string
 }
 
