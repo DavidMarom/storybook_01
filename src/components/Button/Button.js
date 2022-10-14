@@ -4,15 +4,14 @@ import { Button2 } from "./Button.style"
 function Button({
     label,
     backgroundColor = "#3576cc",
-    onClick,
-    width = 700,
-    size = "medium",
+    width,
+    size = "small",
     rounded = false,
 }) {
 
     return (
         <Button2
-            onClick={onClick}
+            onClick={()=>{console.log("Button Pressed")}}
             backgroundColor={backgroundColor}
             width={width}
             size={size}
@@ -24,7 +23,7 @@ function Button({
 }
 
 Button.propTypes = {
-    onclick: PropTypes.func,
+    onClick: PropTypes.func,
     label: PropTypes.string,
     backgroundColor: PropTypes.string,
     width: PropTypes.number,

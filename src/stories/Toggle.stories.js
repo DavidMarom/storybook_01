@@ -13,11 +13,13 @@ export const Green = Template.bind({})
 Regular.args = {
     color: "#0077ff",
     func: () => { console.log("Toggle") },
-    symbol: "🌙"
+    onSymbol: "🔐",
+    offSymbol: "🔓"
 }
 
 Green.args = {
-    color: "#00ff00",
+    color: "#1bc71b",
     func: () => { console.log("Toggle") },
-    symbol: "🌙"
+    onSymbol: "🔐",
+    offSymbol: "🔓"
 }

@@ -7,7 +7,17 @@ export const Container = styled.div`
   background-color: #000000;
   padding: 5px;
   cursor: pointer;
-`;
+  user-select: none;
+  font-size: 1rem;
+  `;
+
+export const Symbol = styled.div`
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  `;
 
 export const Knoba = styled.div`
   z-index:2;
