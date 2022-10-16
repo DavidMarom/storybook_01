@@ -5,9 +5,9 @@ function Welcome({name}) {
 
     return (
         <WelcomeContainer>
-            <h1>Hi {name}</h1>
-            <p>This is my design system. It is still in progress.</p>
-            <p>Stay tuned...</p>
+            <h1>Design System</h1>
+            <p>My design system is based on styled components.</p>
+            <p>It is fully responsive and supports dark mode</p>
         </WelcomeContainer>
     )
 }

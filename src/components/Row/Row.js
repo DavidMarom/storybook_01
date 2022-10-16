@@ -1,32 +1,30 @@
 import PropTypes from "prop-types"
-import { ColContainer } from "./Col.style"
+import { RowContainer } from "./Row.style"
 
-function Col({ children,
-    height,
-    width,
+function Row({ 
+    children,
+    height = 300,
     center = true,
     background
 }) {
 
     return (
-        <ColContainer
+        <RowContainer
             center={center}
             height={height}
-            width={width}
             background={background}
         >
             {children.map(child => child)}
 
-        </ColContainer>
+        </RowContainer>
     )
 }
 
-Col.propTypes = {
+Row.propTypes = {
     children: PropTypes.node,
     height: PropTypes.number,
-    width: PropTypes.number,
     background: PropTypes.string,
     center: PropTypes.bool
 }
 
-export default Col
+export default Row

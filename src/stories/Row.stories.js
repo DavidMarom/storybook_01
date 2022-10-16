@@ -1,20 +1,19 @@
-import Col from '../components/Col/Col'
+import Row from '../components/Row/Row'
 
 export default {
-    title: "Design System/Layout/Col",
-    component: Col
+    title: "Design System/Layout/Row",
+    component: Row
 }
 
-const Template = args => <Col {...args}>
+const Template = args => <Row {...args}>
     <p>First child</p>
     <p>Example of a wider line</p>
     <p>Third line</p>
-</Col>
+</Row>
 
 export const Regular = Template.bind({})
 
 Regular.args = {
     center: true,
     height: 300,
-    width: 300,
 }

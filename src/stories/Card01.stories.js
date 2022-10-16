@@ -1,7 +1,7 @@
 import Card01 from '../components/Card01/Card01'
 
 export default {
-    title: "Card01",
+    title: "Design System/Components/Card01",
     component: Card01
 }
 
