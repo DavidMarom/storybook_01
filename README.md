@@ -4,8 +4,7 @@
 
 Magnifying Glass:
 `
-<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.5 17C14.366 17 17.5 13.866 17.5 10C17.5 6.13401 14.366 3 10.5 3C6.63401 3 3.5 6.13401 3.5 10C3.5 13.866 6.63401 17 10.5 17Z" stroke="#3A65EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.5 15L21.5 21" stroke="#3A65EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.5 15C12.366 15 15.5 11.866 15.5 8C15.5 4.13401 12.366 1 8.5 1C4.63401 1 1.5 4.13401 1.5 8C1.5 11.866 4.63401 15 8.5 15Z" stroke="#3A65EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `
