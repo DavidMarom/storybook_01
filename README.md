@@ -2,4 +2,14 @@
 
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
-`https://www.figma.com/file/IphhXZYe8w3BbQO2sIdzEH/%D7%90%D7%AA%D7%A8-%D7%94%D7%AA%D7%A9%D7%9C%D7%95%D7%9E%D7%99%D7%9D---%D7%A4%D7%99%D7%92%D7%9E%D7%94-%D7%9C%D7%A2%D7%A8%D7%99%D7%9B%D7%94?type=design&node-id=35-8366&t=C0e1QCwNZgwoWsAo-0`
+`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#E5E5E5"/>
+<g id="Icons">
+<rect width="1609" height="1928" transform="translate(-236 -1238)" fill="white"/>
+<g id="24/ outlined / other / person / user">
+<path id="Vector" d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
+`
