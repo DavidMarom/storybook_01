@@ -2,7 +2,4 @@
 
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
-`<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1.5L5 5.5L9 1.5" stroke="#3A65EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`
+`https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGZlMDkyNjQtNWIxMi00M2I3LTkyNDgtZjJkOGFlYjYxOTMy%40thread.v2/0?context=%7b%22Tid%22%3a%221fd80232-9671-4a08-afa2-840bf7ae322d%22%2c%22Oid%22%3a%22d582113a-4af2-49ec-b33f-b13aa2552868%22%7d`
