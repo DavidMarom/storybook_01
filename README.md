@@ -46,4 +46,3 @@ const GridWithFilter: React.FC = () => {
 };
 
 export default GridWithFilter;
-
