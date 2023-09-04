@@ -2,4 +2,48 @@
 
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
-`https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzgxZGVjMTktNzViZS00MWMzLWFmMWUtMmQ2NGFjNDMxZmMw%40thread.v2/0?context=%7b%22Tid%22%3a%228b3747c3-cccd-4b17-8f18-bd610edc86e6%22%2c%22Oid%22%3a%22ce218a2f-c857-4a81-bd2f-d5d2125e8f28%22%7d`
+import React, { useState } from 'react';
+import { Grid, GridColumn, GridFilterCell } from '@progress/kendo-react-grid';
+import { process } from '@progress/kendo-data-query';
+
+// Sample data for the grid
+const data = [
+  { ProductName: 'Product A', Category: 'Category 1' },
+  { ProductName: 'Product B', Category: 'Category 2' },
+  { ProductName: 'Product C', Category: 'Category 1' },
+  { ProductName: 'Product D', Category: 'Category 3' },
+];
+
+const GridWithFilter: React.FC = () => {
+  const [filter, setFilter] = useState({
+    logic: 'and',
+    filters: [],
+  });
+
+  const handleFilterChange = (event: any) => {
+    setFilter({
+      ...filter,
+      filters: {
+        ...filter.filters,
+        [event.filter.field]: event.filter,
+      },
+    });
+  };
+
+  const filteredData = process(data, filter);
+
+  return (
+    <Grid
+      data={filteredData}
+      filterable
+      filter={filter}
+      onFilterChange={handleFilterChange}
+    >
+      <GridColumn field="ProductName" title="Product Name" filterCell={GridFilterCell} />
+      <GridColumn field="Category" title="Category" filterCell={GridFilterCell} />
+    </Grid>
+  );
+};
+
+export default GridWithFilter;
+
