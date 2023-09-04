@@ -2,6 +2,7 @@
 
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
+```
 import React, { useState } from 'react';
 import { Grid, GridColumn, GridFilterCell } from '@progress/kendo-react-grid';
 import { process } from '@progress/kendo-data-query';
@@ -46,3 +47,4 @@ const GridWithFilter: React.FC = () => {
 };
 
 export default GridWithFilter;
+```
