@@ -3,48 +3,51 @@
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
 ```
-import React, { useState } from 'react';
-import { Grid, GridColumn, GridFilterCell } from '@progress/kendo-react-grid';
-import { process } from '@progress/kendo-data-query';
 
-// Sample data for the grid
-const data = [
-  { ProductName: 'Product A', Category: 'Category 1' },
-  { ProductName: 'Product B', Category: 'Category 2' },
-  { ProductName: 'Product C', Category: 'Category 1' },
-  { ProductName: 'Product D', Category: 'Category 3' },
-];
 
-const GridWithFilter: React.FC = () => {
-  const [filter, setFilter] = useState({
-    logic: 'and',
-    filters: [],
-  });
+import * as React from "react";
+import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
+import { filterBy } from "@progress/kendo-data-query";
+import { sampleProducts } from "./sample-products.js";
+const initialFilter = {
+  logic: "and",
+  filters: [
+    {
+      field: "ProductName",
+      operator: "contains",
+      value: "Chef",
+    },
+  ],
+};
+const App = () => {
+  const [filter, setFilter] = React.useState(initialFilter);
 
-  const handleFilterChange = (event: any) => {
-    setFilter({
-      ...filter,
-      filters: {
-        ...filter.filters,
-        [event.filter.field]: event.filter,
-      },
-    });
-  };
-
-  const filteredData = process(data, filter);
+  // return <p>saddsas</p>
 
   return (
     <Grid
-      data={filteredData}
-      filterable
+      style={{ height: "420px" }}
+      data={filterBy(sampleProducts, filter)}
+      filterable={true}
       filter={filter}
-      onFilterChange={handleFilterChange}
+      onFilterChange={(e) => setFilter(e.filter)}
     >
-      <GridColumn field="ProductName" title="Product Name" filterCell={GridFilterCell} />
-      <GridColumn field="Category" title="Category" filterCell={GridFilterCell} />
+      <Column field="ProductID" title="ID" filterable={false} width="60px" />
+      <Column field="ProductName" title="Product Name" width="240px" />
+      <Column
+        field="FirstOrderedOn"
+        width="240px"
+        filter="date"
+        format="{0:d}"
+      />
+      <Column field="UnitPrice" width="180px" filter="numeric" format="{0:c}" />
+      <Column field="Discontinued" width="190px" filter="boolean" />
     </Grid>
   );
 };
 
-export default GridWithFilter;
+export default App;
+
+
+
 ```
