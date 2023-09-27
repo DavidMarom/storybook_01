@@ -3,9 +3,10 @@
 🚀 [Live Storybook](https://6346c29f12cb3212588eb719-kysdmcdpcq.chromatic.com/?path=/story/card01--regular)
 
 ```
-^(?=\d)(?:(\d)(?!\1))*\d+$
 
-^(?=\w)(?:(.)(?!\1))(?<=\1\1\1)?\w+$
+\b(\d+)(?:\s+\d+)*\b
+
+\b(\d+)(?:\s+\d+)*(?:\s+\d+)?\s*(?=\1\b(?!.*\b\1\b))
 
 
 ```
