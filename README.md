@@ -4,18 +4,23 @@
 
 ```
 
-function hasAdjacentNumbers(str) {
-  // Use a regular expression to match two adjacent digits
-  const regex = /\d\d/;
-  
-  // Test if the regular expression matches the input string
-  return regex.test(str);
-}
+function hasAdjacentNumbersWithDifferenceOne(inputString) {
+  for (let i = 0; i < inputString.length - 1; i++) {
+    const char1 = inputString[i];
+    const char2 = inputString[i + 1];
 
-// Example usage:
-const inputString = "abc123def";
-const result = hasAdjacentNumbers(inputString);
-console.log(result); // Output: true
+    if (!isNaN(char1) && !isNaN(char2)) {
+      const num1 = parseInt(char1);
+      const num2 = parseInt(char2);
+
+      if (Math.abs(num1 - num2) === 1) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
 
 
 
