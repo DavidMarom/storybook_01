@@ -4,5 +4,11 @@
 
 ```
 
+.my-custom-input-class[type="number"]::-webkit-inner-spin-button,
+        .my-custom-input-class[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
 
 ```
