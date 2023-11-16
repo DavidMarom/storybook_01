@@ -5,13 +5,9 @@ export const WelcomeContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  
   background-color: #222222;
-  color: #eeeeee;
-
+  color: #ddd;
   width: 100%;
   min-height: 70vh;
-
   font-family: 'Roboto', sans-serif;
-
 `;
